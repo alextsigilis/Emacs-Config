@@ -144,11 +144,5 @@ This repository contains the containts of my .emacs.d folder.
 <p>
 See config.org for more details</p>
 </div>
-<div id="postamble" class="status">
-<p class="author">Author: Alex Tsigilis</p>
-<p class="date">Created: 2018-02-08 Thu 21:51</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
-</div>
 </body>
 </html>
