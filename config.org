@@ -1,5 +1,7 @@
 #+title: Emacs Configuartion
 
+Just read and learn
+
 * Package Instalation
 
 ** Melpa
@@ -10,6 +12,7 @@ I add this to my init.el file for melpa suport
 	     '("melpa" . "https://melpa.org/packages/" ) t)
    (package-initialize)
 #+end_src
+
 
 * Looks and Themes
 
@@ -43,6 +46,7 @@ init.el
 #+begin_src emacs-lisp
 (tool-bar-mode -1)
 #+end_src
+
 
 * Org Mode
 
@@ -91,3 +95,20 @@ The you should add the following to init.el
 
 (when window-system (set-exec-path-from-shell-PATH))
 #+end_src
+
+
+* Enviroments
+
+Emacs can be used as a lot of things:
+- IDE's
+- Notetaking app
+- email client
+
+and much more.
+
+Here I list the ways I use emacs:
+- Waht modes and packages I use
+- And how I configure them
+
+
+** Python
