@@ -1,4 +1,5 @@
 #+title: Emacs Configuartion
+#+toc: nil
 
 Just read and learn
 
@@ -112,3 +113,49 @@ Here I list the ways I use emacs:
 
 
 ** Python
+
+For more info refer to this [[https://realpython.com/blog/python/emacs-the-best-python-editor/#configuration-and-packages][link]].
+
+*** ELPY
+Emacs is distributed with a python-mode (python.el) that provides
+indentation and syntax highlighting. However, to compete with Python-specific
+IDE’s (Integrated Development Environments), we’ll certainly want more. 
+The elpy (Emacs Lisp Python Environment) package provides us with a near 
+complete set of Python IDE features, including:
+
++ Automatic Indentation,
++ Syntax Highlighting,
++ Auto-Completion,
++ Syntax Checking,
++ Python REPL Integration,
++ Virtual Environment Support, and
++ Much [[https://elpy.readthedocs.io/en/latest/ide.html][more]]!
+
+To install and enable elpy we need to add a bit of configuration and install 
+*flake8* and *jedi* using your preferred method for installing Python
+ packages (pip or conda, for example).
+
+The following will install elpy
+#+begin_src emacs-lisp
+M-x package-refresh-contents RET
+
+M-x package-install RET elpy RET
+#+end_src
+
+Now just to enable it:
+#+begin_src emacs-lisp
+ (elpy-enable)
+#+end_src
+
+For interactive ipython shell:
+#+begin_src emacs-lisp
+ (setq python-shell-interpreter "/Library/Frameworks/Python.framework/Versions/3.6/bin/ipython"
+      python-shell-interpreter-args "-i --simple-prompt")  
+#+end_src
+
+
+** Git
+
+Next on line is Git. I want to use gin / github functionality inside emacs, so I dont have to go to a termina.
+
+*** MAGIT
