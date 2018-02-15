@@ -156,7 +156,7 @@ For interactive ipython shell:
 
 ** Git
 
-Next on line is Git. I want to use gin / github functionality inside emacs, so I dont have to go to a termina.
+Next on line is Git. I want to use git / github functionality inside emacs, so I dont have to go to a termina.
 
 *** MAGIT
 
