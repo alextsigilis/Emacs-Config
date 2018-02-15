@@ -159,3 +159,31 @@ For interactive ipython shell:
 Next on line is Git. I want to use gin / github functionality inside emacs, so I dont have to go to a termina.
 
 *** MAGIT
+
+** Clojure
+
+*** Leiningen
+
+_For Clojure itself_:
+
+#+begin_src bash
+brew install leiningen
+#+end_src
+
+*** cider
+
+To install *cider* just type:
+#+begin_src emacs-lisp
+M-x package-install RET cider
+#+end_src
+
+Then you need to install *clojuer-mode*, like this:
+#+begin_src emacs-lisp
+M-x package-install RET clojure-mode
+#+end_src
+
+
+At last there is *projectile*
+#+begin_src emacs-lisp
+M-x package-install RET projectile
+#+end_src
