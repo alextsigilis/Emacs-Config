@@ -46,6 +46,8 @@
     (setq exec-path (split-string path-from-shell path-separator))))
 
 
+(add-to-list 'exec-path "/usr/local/bin/")
+
 ;; ---------------------------------------------------------------
 ;;               PYTHON
 
@@ -71,17 +73,31 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
- '(custom-enabled-themes (quote (tsdh-dark)))
+ '(custom-enabled-themes (quote (atom-dark)))
  '(custom-safe-themes
    (quote
     ("503385a618581dacd495907738719565243ab3e6f62fec8814bade68ef66e996" "e9460a84d876da407d9e6accf9ceba453e2f86f8b86076f37c08ad155de8223c" default)))
  '(fci-rule-color "#3E4451")
  '(package-selected-packages
    (quote
-    (projectile clojure-mode-extra-font-locking cider elpy atom-one-dark-theme atom-dark-theme))))
+    (evil haskell-mode weechat projectile clojure-mode-extra-font-locking cider elpy atom-one-dark-theme atom-dark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+;; --------------------------------------------------------------------------------
+;;
+;;                     EVIL MODE
+
+;;(require 'package)
+;;(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+;;(package-initialize)
+
+(require 'evil)
+(evil-mode 1)
+
+;; --------------------

@@ -98,6 +98,13 @@ The you should add the following to init.el
 #+end_src
 
 
+* Communication
+
+** IRC
+For IRC I have added weehat.el as shown [[https://github.com/the-kenny/weechat.el][here]].
+
+
+
 * Enviroments
 
 Emacs can be used as a lot of things:
@@ -160,6 +167,7 @@ Next on line is Git. I want to use git / github functionality inside emacs, so I
 
 *** MAGIT
 
+
 ** Clojure
 
 *** Leiningen
@@ -169,6 +177,7 @@ _For Clojure itself_:
 #+begin_src bash
 brew install leiningen
 #+end_src
+
 
 *** cider
 
@@ -187,3 +196,29 @@ At last there is *projectile*
 #+begin_src emacs-lisp
 M-x package-install RET projectile
 #+end_src
+
+Then to enable cider-jack-in add this to init.el
+#+begin_src emacs-lisp
+(add-to-list 'exec-path "/usr/local/bin")
+#+end_src
+
+* Other Stuff
+
+** Evil Mode
+
+It's basicly a VIm emulator in emacs.
+
+*** Instalation
+Inside emacs do:
+#+begin_src emacs-lisp
+M-x package-refresh-contents
+M-x package-install RET evil
+#+end_src
+
+And then in init.el file:
+#+begin_src emacs-lisp
+(require 'evil)
+(evil-mode 1)
+#+end_src
+
+
